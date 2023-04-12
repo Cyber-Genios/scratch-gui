@@ -20,7 +20,7 @@ import Box from '../box/box.jsx';
 import MenuBar from '../menu-bar/menu-bar.jsx';
 import CostumeLibrary from '../../containers/costume-library.jsx';
 import BackdropLibrary from '../../containers/backdrop-library.jsx';
-import Watermark from '../../containers/watermark.jsx';
+// import Watermark from '../../containers/watermark.jsx';
 
 import Backpack from '../../containers/backpack.jsx';
 import WebGlModal from '../../containers/webgl-modal.jsx';
@@ -334,9 +334,9 @@ const GUIComponent = props => {
                                             />
                                         </button>
                                     </Box>
-                                    <Box className={styles.watermark}>
+                                    {/* <Box className={styles.watermark}>
                                         <Watermark />
-                                    </Box>
+                                    </Box> */}
                                 </TabPanel>
                                 <TabPanel className={tabClassNames.tabPanel}>
                                     {costumesTabVisible ? <CostumeTab vm={vm} /> : null}

@@ -244,6 +244,8 @@
     background: $motion-primary;
 
     border: 1px solid $motion-primary;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
     box-sizing: content-box; /* To match scratch-block vertical toolbox borders */
 }
 
@@ -283,7 +285,7 @@ $fade-out-distance: 15px;
 }
 
 /* Sprite Selection Watermark */
-.watermark {
+/* .watermark {
     position: absolute;
     top: 1.25rem;
     pointer-events: none;
@@ -295,7 +297,7 @@ $fade-out-distance: 15px;
 
 [dir="rtl"] .watermark {
     left: 1.25rem;
-}
+} */
 
 /* Menu */
 
