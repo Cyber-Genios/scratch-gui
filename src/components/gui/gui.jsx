@@ -240,9 +240,16 @@ const GUIComponent = props => {
                     onStartSelectingFileUpload={onStartSelectingFileUpload}
                     onToggleLoginOpen={onToggleLoginOpen}
                 />
-                <Box className={styles.bodyWrapper}>
-                    <Box className={styles.flexWrapper}>
-                        <Box className={styles.editorWrapper}>
+
+                <Box className={styles.bodyWrapper} >
+                    <Box
+                        className={styles.flexWrapper}
+                        style={{paddingTop: '2rem'}}
+                    >
+                        <Box
+                            className={styles.editorWrapper}
+                            style={{paddingLeft: '1.5rem'}}
+                        >
                             <Tabs
                                 forceRenderTabPanel
                                 className={tabClassNames.tabs}
@@ -343,7 +350,10 @@ const GUIComponent = props => {
                             ) : null}
                         </Box>
 
-                        <Box className={classNames(styles.stageAndTargetWrapper, styles[stageSize])}>
+                        <Box
+                            className={classNames(styles.stageAndTargetWrapper, styles[stageSize])}
+                            style={{paddingRight: '1.5rem'}}
+                        >
                             <StageWrapper
                                 isFullScreen={isFullScreen}
                                 isRendererSupported={isRendererSupported}

@@ -54,11 +54,12 @@
 }
 
 .tab-list {
-    height: $stage-menu-height;
-    width: 250px; /* Match width of the toolbox */
+    height: calc($stage-menu-height + .5rem);
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
+    gap: .5rem;
+    padding-bottom: .5rem;
 
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
@@ -70,17 +71,15 @@
 }
 
 .tab {
-    flex-grow: 1;
-    height: 80%;
+    height: 100%;
+    border-radius: .25rem;
+
     margin-bottom: 0;
+    padding: 0 1.25rem;
 
-    border-radius: 1rem 1rem 0 0;
-    border: 1px solid $ui-black-transparent;
+    font-size: 1rem;
 
-    padding: 0.125rem 1.25rem 0;
-    font-size: 0.75rem;
-
-    background-color: $ui-tertiary;
+    background-color: $ui-white;
     color: $text-primary-transparent;
 
     display: flex;
@@ -91,13 +90,13 @@
     white-space: nowrap;
 }
 
-[dir="ltr"] .tab {
+/* [dir="ltr"] .tab {
     margin-left: -0.5rem;
 }
 
 [dir="rtl"] .tab {
     margin-right: -0.5rem;
-}
+} */
 
 [dir="ltr"] .tab:nth-of-type(1) {
     margin-left: 0;
@@ -119,23 +118,28 @@
 }
 
 .tab:hover {
-  background-color: $ui-primary;
+  color: $motion-primary;
 }
 
+.tab:hover img {
+    filter: none;
+    opacity: 1;
+  }
+
 .tab.is-selected {
-    height: 90%;
     color: $motion-primary;
-    background-color: $ui-white;
     z-index: 4; /* Make sure selected is always above */
+    border-color: transparent;
 }
 
 .tab img {
-    width: 1.375rem;
+    width: 1.5rem;
     filter: grayscale(100%);
+    opacity: 0.3;
 }
 
 [dir="ltr"] .tab img {
-    margin-right: 0.125rem;
+    margin-right: 0.625rem;
 }
 
 [dir="rtl"] .tab img {
@@ -153,6 +157,7 @@
 
 .tab.is-selected img {
     filter: none;
+    opacity: 1;
 }
 
 /* Tab style overrides from react-tabs */
@@ -163,7 +168,7 @@
 .tab.is-selected:focus {
     outline: none;
     box-shadow: none;
-    border-color: $ui-black-transparent;
+    /* border-color: $ui-black-transparent; */
 }
 
 .tab.is-selected:focus:after {

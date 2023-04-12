@@ -12,9 +12,9 @@ $ui-transparent: hsla(0, 100%, 100%, 0); /* 25% transparent version of ui-white 
 $ui-black-transparent: hsla(0, 0%, 0%, 0.15); /* 15% transparent version of black */
 
 $text-primary: hsla(225, 15%, 40%, 1); /* #575E75 */
-$text-primary-transparent: hsla(225, 15%, 40%, 0.75);
+$text-primary-transparent: #BCBCBC;
 
-$motion-primary: hsla(215, 100%, 65%, 1); /* #4C97FF */
+$motion-primary: #923BC1;
 $motion-tertiary: hsla(215, 60%, 50%, 1); /* #3373CC */
 $motion-transparent: hsla(215, 100%, 65%, 0.35); /* 35% transparent version of motion-primary */
 $motion-light-transparent: hsla(215, 100%, 65%, 0.15); /* 15% transparent version of motion-primary */
