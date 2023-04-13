@@ -653,19 +653,14 @@ Blocks.propTypes = {
     })
 };
 
+
 Blocks.defaultOptions = {
     zoom: {
         controls: true,
         wheel: true,
         startScale: BLOCKS_DEFAULT_SCALE
     },
-    grid: {
-        spacing: 40,
-        length: 2,
-        colour: '#ddd'
-    },
     colours: {
-        workspace: '#FFF',
         flyout: '#FFF',
         toolbox: '#FFFFFF',
         toolboxSelected: '#E9EEF2',

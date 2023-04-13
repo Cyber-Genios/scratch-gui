@@ -24,9 +24,6 @@
     right: 0;
     bottom: 0;
     left: 0;
-    border: 1px solid $ui-black-transparent;
-    border-top-right-radius: $space;
-    border-bottom-right-radius: $space;
 }
 
 [dir="rtl"] .blocks :global(.injectionDiv) {
@@ -36,14 +33,22 @@
     border-bottom-left-radius: $space;
 }
 
+.blocks :global(.blocklySvg) {
+    background-color: #f5f5f5;
+}
+
 .blocks :global(.blocklyMainBackground) {
     stroke: none;
 }
 
 .blocks :global(.blocklyToolboxDiv) {
-    box-sizing: content-box;
-    height: calc(100% - 4.25rem) !important;
+    box-sizing: border-box;
+    height: calc(100% - 6.125rem) !important;
     width: 94px;
+
+    padding: 1rem 0;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
 
     /*
         For now, the layout cannot support scrollbars in the category menu.
@@ -56,7 +61,6 @@
 
 [dir="rtl"] .blocks :global(.blocklyToolboxDiv) {
     border-right: none;
-    border-left: 1px solid $ui-black-transparent;
 }
 
 .blocks :global(.blocklyToolboxDiv::-webkit-scrollbar) {
@@ -64,15 +68,31 @@
 }
 
 .blocks :global(.blocklyFlyout) {
-    border-right: 1px solid $ui-black-transparent;
-    box-sizing: content-box;
+    box-sizing: border-box;
+    width: max-content;
+    position: relative;
+    margin-left: 3.125rem;
+
+    /* padding: 0 1.5rem; */
+    border-radius: 1rem;
+    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
+    /* background-color: #fff; */
+}
+
+
+.blocks :global(.blocklyFlyoutLabelText) {
+    font-size: 1.5rem;
+    fill: #414141;
+    font-weight: 400;
 }
 
 [dir="rtl"] .blocks :global(.blocklyFlyout) {
     border-right: none;
-    border-left: 1px solid $ui-black-transparent;
 }
 
+.blocks :global(.injectionDiv .blocklyFlyoutScrollbar){
+    /* display: none; */
+}
 
 .blocks :global(.blocklyBlockDragSurface) {
     /*
@@ -89,18 +109,13 @@
     make the change here instead of in scratch-blocks.
 */
 
-
 .blocks :global(.scratchCategoryMenu) {
    width: 100%;
    height: 100%;
-   padding: 1rem 0;
 
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-
-   box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
-   border-radius: 1rem;
 }
 
 .blocks :global(.scratchCategoryMenuRow) {
@@ -116,10 +131,17 @@
    display: flex;
    flex-direction: column;
    gap: .25rem;
+   padding: 0;
+}
+
+.blocks :global(.scratchCategoryItemBubble) {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 0;
 }
 
 .blocks :global(.scratchCategoryMenuItemLabel) {
-    font-size: 0.65rem;
+    font-size: 0.875rem;
     margin: auto 0;
 }
 
