@@ -89,7 +89,7 @@ button::-moz-focus-inner {
 .more-buttons {
     max-height: 0;
     transition: max-height 1s;
-    overflow-x: visible;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     z-index: 10; /* @todo justify */

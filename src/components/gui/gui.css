@@ -54,7 +54,7 @@
 }
 
 .tab-list {
-    height: calc($stage-menu-height + .5rem);
+    height: $stage-menu-height;
     display: flex;
     align-items: flex-end;
     flex-shrink: 0;
@@ -222,7 +222,7 @@
     flex-grow: 1;
     flex-basis: 0;
 
-    padding-top: $space;
+    padding-top: 16px;
     min-height: 0; /* this makes it work in Firefox */
 
     /*
