@@ -64,7 +64,7 @@ class CustomProcedures extends React.Component {
                 // Workspace is always origin top-left, with x increasing to the right
                 // Calculate initial starting offset and save it, every other move
                 // has to take the original offset into account.
-                // Calculate a new left postion based on new width
+                // Calculate a new left position based on new width
                 // Convert current x position into LTR (mirror) x position (uses original offset)
                 // Use the difference between ltrX and mirrorX as the amount to move
                 const ltrX = ((metrics.viewWidth / 2) - (this.mutationRoot.width / 2) + 25);

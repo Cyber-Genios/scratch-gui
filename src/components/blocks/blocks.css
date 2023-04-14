@@ -68,17 +68,14 @@
 }
 
 .blocks :global(.blocklyFlyout) {
-    box-sizing: border-box;
-    width: max-content;
-    position: relative;
-    margin-left: 3.125rem;
-
-    /* padding: 0 1.5rem; */
+    margin-left: -1rem;
     border-radius: 1rem;
     box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
-    /* background-color: #fff; */
 }
 
+/*
+.blocks :global(.blocklyFlyout .blocklyWorkspace) {
+} */
 
 .blocks :global(.blocklyFlyoutLabelText) {
     font-size: 1.5rem;
@@ -90,9 +87,9 @@
     border-right: none;
 }
 
-.blocks :global(.injectionDiv .blocklyFlyoutScrollbar){
-    /* display: none; */
-}
+/* .blocks :global(.injectionDiv .blocklyScrollbarVertical){
+    background-color: red;
+} */
 
 .blocks :global(.blocklyBlockDragSurface) {
     /*
