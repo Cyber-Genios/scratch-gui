@@ -3,7 +3,7 @@
 
 .sprite-info {
     padding: 1rem 1rem 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     background-color: white;
     color: $text-primary;
     border-top-left-radius: 1rem;
