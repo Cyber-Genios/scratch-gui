@@ -91,7 +91,7 @@
     justify-content: space-between;
     align-items: flex-end;
     width: 22px;
-    height: 16px;
+    height: 1rem;
 }
 
 [dir="ltr"] .signal-strength-meter {

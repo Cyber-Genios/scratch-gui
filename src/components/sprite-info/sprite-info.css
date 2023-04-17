@@ -2,12 +2,12 @@
 @import "../../css/colors.css";
 
 .sprite-info {
-    padding: 16px 16px 0;
+    padding: 1rem 1rem 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: white;
     color: $text-primary;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
 .row {

@@ -210,7 +210,7 @@
     display: flex;
     flex-direction: column;
     /* pad entire wrapper to the left and right; allow children to fill width */
-    padding-left: 16px;
+    padding-left: 1rem;
     padding-right: $space;
 
     /* this will only ever be as wide as the stage */
@@ -222,7 +222,7 @@
     flex-grow: 1;
     flex-basis: 0;
 
-    padding-top: 16px;
+    padding-top: 1rem;
     min-height: 0; /* this makes it work in Firefox */
 
     /*

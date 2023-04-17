@@ -13,10 +13,10 @@ $header-height: calc($stage-menu-height - 2px);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: $ui-white;
     color: $text-primary;
-    border-radius: 16px;
+    border-radius: 1rem;
     cursor: pointer;
     transition: all 0.25s ease;
-    padding: 16px 8px;
+    padding: 1rem 8px;
     box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
 }
 

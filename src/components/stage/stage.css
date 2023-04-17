@@ -9,7 +9,7 @@
     */
     display: block;
 
-    border-radius: 16px;
+    border-radius: 1rem;
     overflow: hidden;
 
     box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
