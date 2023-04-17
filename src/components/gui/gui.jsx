@@ -244,7 +244,7 @@ const GUIComponent = props => {
                 <Box className={styles.bodyWrapper} >
                     <Box
                         className={styles.flexWrapper}
-                        style={{paddingTop: '2rem'}}
+                        style={{padding: '2rem 0'}}
                     >
                         <Box
                             className={styles.editorWrapper}

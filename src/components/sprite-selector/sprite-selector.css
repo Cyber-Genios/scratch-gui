@@ -6,7 +6,7 @@
     flex-grow: 1;
     position: relative;
     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
-    margin-right: calc($space / 2);
+    margin-right: 1rem;
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
@@ -47,7 +47,7 @@
               also introduces a new bug in Chrome when vertically resizing window down,
               then back up, introduces white space in the outside the page container.
     */
-    height: calc(100% - $sprite-info-height);
+    height: calc(100% - $sprite-info-height - .75rem);
     overflow-y: auto;
     background-color: $ui-primary;
     margin: 8px;
@@ -68,7 +68,8 @@
 
 .add-button {
     position: absolute;
-    bottom: 0.75rem;
+    bottom: 2rem;
+    margin-right: 1.5rem;
 }
 
 [dir="ltr"] .add-button {
