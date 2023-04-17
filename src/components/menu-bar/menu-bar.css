@@ -42,12 +42,12 @@
 .inactive {
     opacity: 0;
 }
-.scratch-logo {
+.cybergenios-logo {
     height:  1.6rem;
     vertical-align: middle;
 }
 
-.scratch-logo.clickable {
+.cybergenios-logo.clickable {
     cursor: pointer;
 }
 

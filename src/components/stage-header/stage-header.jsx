@@ -16,7 +16,7 @@ import largeStageIcon from './icon--large-stage.svg';
 import smallStageIcon from './icon--small-stage.svg';
 import unFullScreenIcon from './icon--unfullscreen.svg';
 
-import scratchLogo from '../menu-bar/scratch-logo.svg';
+import cybergeniosLogo from '../menu-bar/cybergenios-logo.svg';
 import styles from './stage-header.css';
 
 const messages = defineMessages({
@@ -66,7 +66,7 @@ const StageHeaderComponent = function (props) {
     if (isFullScreen) {
         const stageDimensions = getStageDimensions(null, true);
         const stageButton = showBranding ? (
-            <div className={styles.embedScratchLogo}>
+            <div className={styles.embedcybergeniosLogo}>
                 <a
                     href="https://scratch.mit.edu"
                     rel="noopener noreferrer"
@@ -74,7 +74,7 @@ const StageHeaderComponent = function (props) {
                 >
                     <img
                         alt="Scratch"
-                        src={scratchLogo}
+                        src={cybergeniosLogo}
                     />
                 </a>
             </div>

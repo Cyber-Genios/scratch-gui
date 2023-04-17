@@ -1660,11 +1660,6 @@
   dependencies:
     "@octokit/openapi-types" "^13.11.0"
 
-"@scratch/paper@0.11.20200728195508":
-  version "0.11.20200728195508"
-  resolved "https://registry.npmjs.org/@scratch/paper/-/paper-0.11.20200728195508.tgz"
-  integrity sha512-cphYw/y/l36UJ8fv/LXyK+lHlxMXtoydJUsgA4u5QnaUaSZYepuSHik6PewJGT4qvaPwT5ImvHWwX2kElWXvoQ==
-
 "@semantic-release/changelog@^6.0.1":
   version "6.0.1"
   resolved "https://registry.npmjs.org/@semantic-release/changelog/-/changelog-6.0.1.tgz"
@@ -3809,11 +3804,6 @@ classnames@^2.2.0, classnames@^2.2.3, classnames@^2.2.5, classnames@2.2.6:
   resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.6.tgz"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
-classnames@2.2.5:
-  version "2.2.5"
-  resolved "https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz"
-  integrity sha512-DTt3GhOUDKhh4ONwIJW4lmhyotQmV2LjNlGK/J2hkwUcqcbKkCLAdJPtxQnxnlc7SR3f1CEXCyMmc7WLUsWbNA==
-
 clean-css@4.2.x:
   version "4.2.1"
   resolved "https://registry.npmjs.org/clean-css/-/clean-css-4.2.1.tgz"
@@ -3934,11 +3924,6 @@ color-convert@^2.0.1:
   integrity sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==
   dependencies:
     color-name "~1.1.4"
-
-color-convert@~0.5.0:
-  version "0.5.3"
-  resolved "https://registry.npmjs.org/color-convert/-/color-convert-0.5.3.tgz"
-  integrity sha512-RwBeO/B/vZR3dfKL1ye/vx8MHZ40ugzpyfeVG5GsiuGnrlMWe2o8wxBbLCpw9CsxV+wHuzYlCiWnybrIA0ling==
 
 color-name@~1.1.4:
   version "1.1.4"
@@ -10749,13 +10734,6 @@ parse-asn1@^5.0.0:
     pbkdf2 "^3.0.3"
     safe-buffer "^5.1.1"
 
-parse-color@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/parse-color/-/parse-color-1.0.0.tgz"
-  integrity sha512-fuDHYgFHJGbpGMgw9skY/bj3HL/Jrn4l/5rSspy00DoT4RyLnDcRvPxdZ+r6OFwIsgAuhDh4I09tAId4mI12bw==
-  dependencies:
-    color-convert "~0.5.0"
-
 parse-conflict-json@^2.0.1, parse-conflict-json@^2.0.2:
   version "2.0.2"
   resolved "https://registry.npmjs.org/parse-conflict-json/-/parse-conflict-json-2.0.2.tgz"
@@ -11520,7 +11498,7 @@ react-contextmenu@2.9.4:
     classnames "^2.2.5"
     object-assign "^4.1.0"
 
-"react-dom@^0.14.0 || ^15.0.0 || ^16", "react-dom@^0.14.0 || ^15.0.0 || ^16.0.0", "react-dom@^15.3.0 || ^16.0.0-alpha", react-dom@^16, react-dom@^16.0.0-0, react-dom@>=0.14, react-dom@16.2.1:
+"react-dom@^0.14.0 || ^15.0.0 || ^16", "react-dom@^0.14.0 || ^15.0.0 || ^16.0.0", "react-dom@^15.3.0 || ^16.0.0-alpha", react-dom@^16.0.0-0, react-dom@>=0.14, react-dom@16.2.1:
   version "16.2.1"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-16.2.1.tgz"
   integrity sha512-0ujGgYnpX0GlaAjUfwU7ddy0DjuzPmTHHi2SlPolGv7hAyUpK7XA7WZcxit5ZcU7cW5QU1HJjlS3eMn42tSfYQ==
@@ -11546,14 +11524,7 @@ react-ga@2.5.3:
     prop-types "^15.6.0"
     react "^15.6.2 || ^16.0"
 
-react-intl-redux@^0.7:
-  version "0.7.0"
-  resolved "https://registry.npmjs.org/react-intl-redux/-/react-intl-redux-0.7.0.tgz"
-  integrity sha512-T7I7Yy1UkvD8rOB1B+SCG63LYJBtBcvGJ8FVJ8g8Yjhm4+rEhKzJuh1MaQBhwKZNlVcHlx4SlKdtkw8urdZdrA==
-  dependencies:
-    prop-types "^15.6.0"
-
-react-intl@^2, react-intl@^2.2.2, react-intl@2.9.0:
+react-intl@2.9.0:
   version "2.9.0"
   resolved "https://registry.npmjs.org/react-intl/-/react-intl-2.9.0.tgz"
   integrity sha512-27jnDlb/d2A7mSJwrbOBnUgD+rPep+abmoJE511Tf8BnoONIAUehy/U1zZCHGO17mnOwMWxqN4qC0nW11cD6rA==
@@ -11584,7 +11555,7 @@ react-modal@3.9.1:
     react-lifecycles-compat "^3.0.0"
     warning "^4.0.3"
 
-react-popover@^0.5, react-popover@0.5.10:
+react-popover@0.5.10:
   version "0.5.10"
   resolved "https://registry.npmjs.org/react-popover/-/react-popover-0.5.10.tgz"
   integrity sha512-5SYDTfncywSH00I70oHd4gFRUR8V0rJ4sRADSI/P6G0RVXp9jUgaWloJ0Bk+SFnjpLPuipTKuzQNNd2CTs5Hrw==
@@ -11594,7 +11565,7 @@ react-popover@^0.5, react-popover@0.5.10:
     lodash.throttle "^3.0.3"
     prop-types "^15.5.10"
 
-react-redux@^5, react-redux@^5.0.1, react-redux@5.0.7:
+react-redux@5.0.7:
   version "5.0.7"
   resolved "https://registry.npmjs.org/react-redux/-/react-redux-5.0.7.tgz"
   integrity sha512-5VI8EV5hdgNgyjfmWzBbdrqUkrVRKlyTKk1sGH3jzM2M2Mhj/seQgPXaz6gVAj2lz/nz688AdTqMO18Lr24Zhg==
@@ -11606,7 +11577,7 @@ react-redux@^5, react-redux@^5.0.1, react-redux@5.0.7:
     loose-envify "^1.1.0"
     prop-types "^15.6.0"
 
-react-responsive@^5, react-responsive@5.0.0:
+react-responsive@5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/react-responsive/-/react-responsive-5.0.0.tgz"
   integrity sha512-oEimZ0FTCC3/pjGDEBHOz06nWbBNDIbMGOdRYp6K9SBUmrqgNAX77hTiqvmRQeLyI97zz4F4kiaFRxFspDxE+w==
@@ -11615,7 +11586,7 @@ react-responsive@^5, react-responsive@5.0.0:
     matchmediaquery "^0.3.0"
     prop-types "^15.6.1"
 
-react-style-proptype@^3, react-style-proptype@3.2.2:
+react-style-proptype@3.2.2:
   version "3.2.2"
   resolved "https://registry.npmjs.org/react-style-proptype/-/react-style-proptype-3.2.2.tgz"
   integrity sha512-ywYLSjNkxKHiZOqNlso9PZByNEY+FTyh3C+7uuziK0xFXu9xzdyfHwg4S9iyiRRoPCR4k2LqaBBsWVmSBwCWYQ==
@@ -11639,7 +11610,7 @@ react-test-renderer@^16.0.0-0, react-test-renderer@16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-tooltip@^3, react-tooltip@3.8.0:
+react-tooltip@3.8.0:
   version "3.8.0"
   resolved "https://registry.npmjs.org/react-tooltip/-/react-tooltip-3.8.0.tgz"
   integrity sha512-Uj/vVd0uGuqwTkWeRjKS56T2iwOSvsSMbjqTK7AseHZEMND+WCXXUajaF7+ZsJWTZgnpeT9kBnaBFhchzeDTbw==
@@ -11659,7 +11630,7 @@ react-virtualized@9.20.1:
     prop-types "^15.6.0"
     react-lifecycles-compat "^3.0.4"
 
-"react@^0.14 || ^15.0.0 || ^16.0.0-alpha", "react@^0.14.0 || ^15.0.0 || ^16", "react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0", "react@^0.14.9 || ^15.0.0 || ^16.0.0", "react@^0.14.9 || ^15.3.0 || ^16.0.0", "react@^15.3.0 || ^16.0.0-alpha", "react@^15.6.2 || ^16.0", react@^16, react@^16.0.0, react@^16.0.0-0, react@>=0.14, "react@0.13.x || 0.14.x || ^15.0.0-0 || ^16.0.0-0", react@16.2.0:
+"react@^0.14 || ^15.0.0 || ^16.0.0-alpha", "react@^0.14.0 || ^15.0.0 || ^16", "react@^0.14.0 || ^15.0.0 || ^16.0.0", "react@^0.14.0 || ^15.0.0-0 || ^16.0.0-0", "react@^0.14.9 || ^15.0.0 || ^16.0.0", "react@^0.14.9 || ^15.3.0 || ^16.0.0", "react@^15.3.0 || ^16.0.0-alpha", "react@^15.6.2 || ^16.0", react@^16.0.0, react@^16.0.0-0, react@>=0.14, "react@0.13.x || 0.14.x || ^15.0.0-0 || ^16.0.0-0", react@16.2.0:
   version "16.2.0"
   resolved "https://registry.npmjs.org/react/-/react-16.2.0.tgz"
   integrity sha512-ZmIomM7EE1DvPEnSFAHZn9Vs9zJl5A9H7el0EGTE6ZbW9FKe/14IYAlPbC8iH25YarEQxZL+E8VW7Mi7kfQrDQ==
@@ -11933,7 +11904,7 @@ redux-throttle@0.1.1:
   dependencies:
     lodash.throttle "4.0.1"
 
-"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", redux@^3, redux@3.7.2:
+"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", redux@3.7.2:
   version "3.7.2"
   resolved "https://registry.npmjs.org/redux/-/redux-3.7.2.tgz"
   integrity sha512-pNqnf9q1hI5HHZRBkj3bAngGZW/JMCmexDlOxw4XagXY2o1327nHH54LoTjiPJ0gizoqPDRqWyX/00g0hD6w+A==
@@ -12483,10 +12454,9 @@ scratch-l10n@3.15.20230412032123:
     download "^8.0.0"
     transifex "1.6.6"
 
-scratch-paint@1.1.46:
-  version "1.1.46"
-  resolved "https://registry.npmjs.org/scratch-paint/-/scratch-paint-1.1.46.tgz"
-  integrity sha512-uklJlBvb9dGt1A50kEp1TZ3hWS1dZWWoL7+l7gIR6eILSglmcO0iqPCfDoy9lB4AybaMIDs9goDOqmq+mAZ2Sg==
+"scratch-paint@file:../scratch-paint":
+  version "1.1.47"
+  resolved "file:../scratch-paint"
   dependencies:
     "@scratch/paper" "0.11.20200728195508"
     classnames "2.2.5"
@@ -12506,7 +12476,7 @@ scratch-parser@5.1.1:
     jszip "3.1.5"
     pify "4.0.1"
 
-scratch-render-fonts@^1.0.0-prerelease, scratch-render-fonts@^1.0.0-prerelease.20210401210003, scratch-render-fonts@1.0.0-prerelease.20221102164332:
+scratch-render-fonts@^1.0.0-prerelease, scratch-render-fonts@1.0.0-prerelease.20221102164332:
   version "1.0.0-prerelease.20221102164332"
   resolved "https://registry.npmjs.org/scratch-render-fonts/-/scratch-render-fonts-1.0.0-prerelease.20221102164332.tgz"
   integrity sha512-22MbRDGUSArVEoHatg5rt7f/H0wWhMrcyN6HD0OQJeDqdlO3qSSX9/qvdzNJGYWwZkhrdJWcI5JGD1YuJfefmw==
