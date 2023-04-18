@@ -55,14 +55,14 @@ $header-height: calc($stage-menu-height - 2px);
 
 .count {
     padding: 0.3rem 0.75rem;
-    font-size: 0.625rem;
-    color: $text-primary;
+    font-size: 0.75rem;
+    color: #414141;
     user-select: none;
 }
 
 .label {
     margin: 0.75rem 0 0.25rem;
-    color: $text-primary;
+    color: #414141;
     user-select: none;
     text-align: center;
 }
