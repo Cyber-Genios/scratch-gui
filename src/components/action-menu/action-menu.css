@@ -45,7 +45,6 @@ button::-moz-focus-inner {
     border-radius: 100%;
     width: $main-button-size;
     height: $main-button-size;
-    box-shadow: 0 0 0 4px $motion-transparent;
     z-index: $z-index-add-button;
     transition: transform, box-shadow 0.5s;
 }

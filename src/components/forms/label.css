@@ -18,7 +18,7 @@
 }
 
 .input-label, .input-label-secondary {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
     user-select: none;
     cursor: default;
 
@@ -34,5 +34,5 @@
 }
 
 .input-label {
-    font-weight: bold;
+    font-weight: normal;
 }
