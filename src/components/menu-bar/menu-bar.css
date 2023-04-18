@@ -26,7 +26,7 @@
     */
     /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
     font-size: $menu-bar-standard-font-size;
-    font-weight: bold;
+    font-weight: 400;
     background-color: $motion-primary;
     color: $ui-white;
 }
@@ -54,18 +54,20 @@
 }
 
 .language-icon {
-    height:  1.5rem;
+    height:  2rem;
     vertical-align: middle;
 }
 
 .language-caret {
     margin: 0 .125rem;
+    display: none;
 }
 
 .language-menu {
     box-sizing: border-box;
     display: inline-flex;
     width: $language-selector-width;
+    margin-right: 2.75rem;
 }
 
 .menu-bar-item {
@@ -104,10 +106,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.file-group .menu-bar-item {
-    padding: 0 1.5rem;
 }
 
 .menu-bar-item.language-menu {
@@ -159,10 +157,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.account-info-group .menu-bar-item {
-    padding: 0 0.75rem;
+    gap: 1.5rem;
 }
 
 .mystuff-icon {
@@ -228,3 +223,9 @@
     margin: 0.5rem;
     vertical-align: middle;
 }
+
+.user-section-icon {
+    font-size: 1.5rem;
+    margin-right: .5rem;
+}
+
