@@ -43,7 +43,7 @@
 
 .blocks :global(.blocklyToolboxDiv) {
     box-sizing: border-box;
-    height: calc(100% - 6.125rem) !important;
+    height: calc(100% - 5.5rem) !important;
     width: 94px;
 
     padding: 1rem 0;

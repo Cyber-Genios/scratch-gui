@@ -3,7 +3,7 @@ e.g. STAGE_DIMENSION_DEFAULTS in lib/screen-utils.js */
 
 $space: 0.5rem;
 
-$sprites-per-row: 3;
+$sprites-per-row: 4;
 
 $menu-bar-height: 4rem;
 $language-selector-width: 3rem;
