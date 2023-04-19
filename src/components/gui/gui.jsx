@@ -383,8 +383,8 @@ GUIComponent.propTypes = {
     authorThumbnailUrl: PropTypes.string,
     authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]), // can be false
     backdropLibraryVisible: PropTypes.bool,
-    backpackHost: PropTypes.string,
-    backpackVisible: PropTypes.bool,
+    // backpackHost: PropTypes.string,
+    // backpackVisible: PropTypes.bool,
     basePath: PropTypes.string,
     blocksTabVisible: PropTypes.bool,
     blocksId: PropTypes.string,
@@ -442,8 +442,8 @@ GUIComponent.propTypes = {
     vm: PropTypes.instanceOf(VM).isRequired
 };
 GUIComponent.defaultProps = {
-    backpackHost: null,
-    backpackVisible: false,
+    // backpackHost: null,
+    // backpackVisible: false,
     basePath: './',
     blocksId: 'original',
     canChangeLanguage: true,
