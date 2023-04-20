@@ -95,7 +95,7 @@ class SpriteInfo extends React.Component {
             <div className={styles.group}>
                 {
                     (stageSize === STAGE_DISPLAY_SIZES.large) ?
-                        <div className={styles.iconWrapper}>
+                        <div className={classNames(styles.iconWrapper, styles.xIcon)}>
                             <img
                                 aria-hidden="true"
                                 className={classNames(styles.xIcon, styles.icon)}

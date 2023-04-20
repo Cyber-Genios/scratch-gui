@@ -45,6 +45,10 @@
     user-select: none;
 }
 
+.x-icon {
+    margin-right: 0.125rem;
+}
+
 .icon {
     width: 100%;
     height: 100%;

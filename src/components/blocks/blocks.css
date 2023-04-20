@@ -69,7 +69,6 @@
 .blocks :global(.blocklyFlyout) {
     margin-left: -1rem;
     border-radius: 1rem;
-    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
 }
 
 /*
