@@ -47,7 +47,6 @@
     width: 94px;
 
     padding: 1rem 0;
-    box-shadow: 2px 5px 7px rgba(0, 0, 0, 0.1);
     border-radius: 1rem;
 
     /*
@@ -86,10 +85,6 @@
 [dir="rtl"] .blocks :global(.blocklyFlyout) {
     border-right: none;
 }
-
-/* .blocks :global(.injectionDiv .blocklyScrollbarVertical){
-    background-color: red;
-} */
 
 .blocks :global(.blocklyBlockDragSurface) {
     /*
