@@ -13,7 +13,7 @@
     color: $text-primary;
     border-width: 2px;
     border-style: solid;
-    border-color: $ui-black-transparent;
+    border-color: #BCBCBC;
     border-radius: $space;
 
     text-align: center;
@@ -30,6 +30,11 @@
 .sprite-selector-item:hover {
     border: 2px solid $motion-primary;
     background: $ui-white;
+}
+
+.sprite-selector-item:hover .sprite-info {
+    background: $motion-primary;
+    color: $ui-white;
 }
 
 .sprite-selector-item:hover .sprite-image, .is-selected .sprite-image {
@@ -68,6 +73,7 @@
     font-size: 0.625rem;
     color: $text-primary;
     user-select: none;
+    background: #BCBCBC;
 }
 
 .sprite-name, .sprite-details {
@@ -79,6 +85,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     min-width: 0;
+    color: $ui-white;
 }
 
 .sprite-details {
