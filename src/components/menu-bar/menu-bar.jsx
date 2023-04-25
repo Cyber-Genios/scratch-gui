@@ -16,14 +16,14 @@ import ShareButton from './share-button.jsx';
 import {ComingSoonTooltip} from '../coming-soon/coming-soon.jsx';
 // import Divider from '../divider/divider.jsx';
 import LanguageSelector from '../../containers/language-selector.jsx';
-// import SaveStatus from './save-status.jsx';
+import SaveStatus from './save-status.jsx';
 import ProjectWatcher from '../../containers/project-watcher.jsx';
 import MenuBarMenu from './menu-bar-menu.jsx';
 import {MenuItem, MenuSection} from '../menu/menu.jsx';
 // import ProjectTitleInput from './project-title-input.jsx';
 // import AuthorInfo from './author-info.jsx';
-// import AccountNav from '../../containers/account-nav.jsx';
-// import LoginDropdown from './login-dropdown.jsx';
+import AccountNav from '../../containers/account-nav.jsx';
+import LoginDropdown from './login-dropdown.jsx';
 import SB3Downloader from '../../containers/sb3-downloader.jsx';
 import DeletionRestorer from '../../containers/deletion-restorer.jsx';
 import TurboMode from '../../containers/turbo-mode.jsx';
@@ -77,8 +77,8 @@ import collectMetadata from '../../lib/collect-metadata';
 import styles from './menu-bar.css';
 
 // import helpIcon from '../../lib/assets/icon--tutorials.svg';
-// import mystuffIcon from './icon--mystuff.png';
-// import profileIcon from './icon--profile.png';
+import mystuffIcon from './icon--mystuff.png';
+import profileIcon from './icon--profile.png';
 import remixIcon from './icon--remix.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
@@ -744,7 +744,7 @@ class MenuBar extends React.Component {
 
                 {/* show the proper UI in the account menu, given whether the user is
                 logged in, and whether a session is available to log in with */}
-                {/* <div className={styles.accountInfoGroup}>
+                <div className={styles.accountInfoGroup}>
                     <div className={styles.menuBarItem}>
                         {this.props.canSave && (
                             <SaveStatus />
@@ -869,8 +869,9 @@ class MenuBar extends React.Component {
                                 </React.Fragment>
                             ) : []}
                         </React.Fragment>
-                    )}
-                </div> */}
+                    )
+                    }
+                </div>
 
                 {aboutButton}
             </Box>
@@ -880,7 +881,7 @@ class MenuBar extends React.Component {
 
 MenuBar.propTypes = {
     aboutMenuOpen: PropTypes.bool,
-    // accountMenuOpen: PropTypes.bool,
+    accountMenuOpen: PropTypes.bool,
     // authorId: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     // authorThumbnailUrl: PropTypes.string,
     // authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
@@ -906,7 +907,7 @@ MenuBar.propTypes = {
     isUpdating: PropTypes.bool,
     languageMenuOpen: PropTypes.bool,
     locale: PropTypes.string.isRequired,
-    // loginMenuOpen: PropTypes.bool,
+    loginMenuOpen: PropTypes.bool,
     logo: PropTypes.string,
     modeMenuOpen: PropTypes.bool,
     modeNow: PropTypes.bool,
@@ -924,41 +925,41 @@ MenuBar.propTypes = {
             })
         )
     ]),
-    // onClickAccount: PropTypes.func,
+    onClickAccount: PropTypes.func,
     onSetTimeTravelMode: PropTypes.func,
     onClickEdit: PropTypes.func,
     onClickFile: PropTypes.func,
     onClickLanguage: PropTypes.func,
-    // onClickLogin: PropTypes.func,
+    onClickLogin: PropTypes.func,
     onClickLogo: PropTypes.func,
     onClickMode: PropTypes.func,
     onClickNew: PropTypes.func,
     onClickRemix: PropTypes.func,
     onClickSave: PropTypes.func,
     onClickSaveAsCopy: PropTypes.func,
-    // onLogOut: PropTypes.func,
-    // onOpenRegistration: PropTypes.func,
+    onLogOut: PropTypes.func,
+    onOpenRegistration: PropTypes.func,
     // onOpenTipLibrary: PropTypes.func,
     onProjectTelemetryEvent: PropTypes.func,
     onRequestOpenAbout: PropTypes.func,
     onRequestCloseAbout: PropTypes.func,
-    // onRequestCloseAccount: PropTypes.func,
+    onRequestCloseAccount: PropTypes.func,
     onRequestCloseEdit: PropTypes.func,
     onRequestCloseFile: PropTypes.func,
     // onRequestCloseLanguage: PropTypes.func,
-    // onRequestCloseLogin: PropTypes.func,
+    onRequestCloseLogin: PropTypes.func,
     onRequestCloseMode: PropTypes.func,
     onSeeCommunity: PropTypes.func,
     onShare: PropTypes.func,
     onStartSelectingFileUpload: PropTypes.func,
     // onToggleLoginOpen: PropTypes.func,
     projectTitle: PropTypes.string,
-    // renderLogin: PropTypes.func,
-    // sessionExists: PropTypes.bool,
+    renderLogin: PropTypes.func,
+    sessionExists: PropTypes.bool,
     shouldSaveBeforeTransition: PropTypes.func,
     showComingSoon: PropTypes.bool,
     // userOwnsProject: PropTypes.bool,
-    // username: PropTypes.string,
+    username: PropTypes.string,
     vm: PropTypes.instanceOf(VM).isRequired
 };
 
