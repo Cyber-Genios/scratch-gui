@@ -39,9 +39,9 @@ class Storage extends ScratchStorage {
         this.projectToken = projectToken;
     }
     getProjectGetConfig (projectAsset) {
-        const path = `${this.projectHost}/${projectAsset.assetId}`;
-        const qs = this.projectToken ? `?token=${this.projectToken}` : '';
-        return path + qs;
+        const path = `${this.projectHost}/projects/${projectAsset.assetId}/content`;
+        // const qs = this.projectToken ? `?token=${this.projectToken}` : '';
+        return path;
     }
     getProjectCreateConfig () {
         return {
@@ -59,7 +59,7 @@ class Storage extends ScratchStorage {
         this.assetHost = assetHost;
     }
     getAssetGetConfig (asset) {
-        return `${this.assetHost}/internalapi/asset/${asset.assetId}.${asset.dataFormat}/get/`;
+        return `${this.assetHost}/${asset.assetId}.${asset.dataFormat}`;
     }
     getAssetCreateConfig (asset) {
         return {
@@ -68,8 +68,8 @@ class Storage extends ScratchStorage {
             // assetId as part of the create URI. So, force the method to POST.
             // Then when storage finds this config to use for the "update", still POSTs
             method: 'post',
-            url: `${this.assetHost}/${asset.assetId}.${asset.dataFormat}`,
-            withCredentials: true
+            url: `${this.assetHost}/${asset.assetId}.${asset.dataFormat}`
+            // withCredentials: true
         };
     }
     setTranslatorFunction (translator) {

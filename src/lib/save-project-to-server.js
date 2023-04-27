@@ -20,8 +20,8 @@ export default function (projectId, vmState, params) {
         // If we set json:true then the body is double-stringified, so don't
         headers: {
             'Content-Type': 'application/json'
-        },
-        withCredentials: true
+        }
+        // withCredentials: true
     };
     const creatingProject = projectId === null || typeof projectId === 'undefined';
     const queryParams = {};
