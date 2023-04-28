@@ -20,8 +20,8 @@ import SaveStatus from './save-status.jsx';
 import ProjectWatcher from '../../containers/project-watcher.jsx';
 import MenuBarMenu from './menu-bar-menu.jsx';
 import {MenuItem, MenuSection} from '../menu/menu.jsx';
-// import ProjectTitleInput from './project-title-input.jsx';
-// import AuthorInfo from './author-info.jsx';
+import ProjectTitleInput from './project-title-input.jsx';
+import AuthorInfo from './author-info.jsx';
 import AccountNav from '../../containers/account-nav.jsx';
 import LoginDropdown from './login-dropdown.jsx';
 import SB3Downloader from '../../containers/sb3-downloader.jsx';
@@ -76,14 +76,14 @@ import collectMetadata from '../../lib/collect-metadata';
 
 import styles from './menu-bar.css';
 
-// import helpIcon from '../../lib/assets/icon--tutorials.svg';
+import helpIcon from '../../lib/assets/icon--tutorials.svg';
 import mystuffIcon from './icon--mystuff.png';
 import profileIcon from './icon--profile.png';
 import remixIcon from './icon--remix.svg';
 import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
-import questionsIcon from './questions-icon.svg';
+// import questionsIcon from './questions-icon.svg';
 import cybercoinIcon from './cybercoin-icon.svg';
 
 import cybergeniosLogo from './cybergenios-logo.svg';
@@ -628,7 +628,7 @@ class MenuBar extends React.Component {
                         )}
                     </div>
                     {/* <Divider className={classNames(styles.divider)} /> */}
-                    {/* <div
+                    <div
                         aria-label={this.props.intl.formatMessage(ariaMessages.tutorials)}
                         className={classNames(styles.menuBarItem, styles.hoverable)}
                         onClick={this.props.onOpenTipLibrary}
@@ -638,9 +638,9 @@ class MenuBar extends React.Component {
                             src={helpIcon}
                         />
                         <FormattedMessage {...ariaMessages.tutorials} />
-                    </div> */}
+                    </div>
                     {/* <Divider className={classNames(styles.divider)} /> */}
-                    {/* {this.props.canEditTitle ? (
+                    {this.props.canEditTitle ? (
                         <div className={classNames(styles.menuBarItem, styles.growable)}>
                             <MenuBarItemTooltip
                                 enable
@@ -659,8 +659,9 @@ class MenuBar extends React.Component {
                             userId={this.props.authorId}
                             username={this.props.authorUsername}
                         />
-                    ) : null)} */}
-                    {false && <div className={classNames(styles.menuBarItem)}>
+                    ) : null)}
+
+                    <div className={classNames(styles.menuBarItem)}>
                         {this.props.canShare ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -685,8 +686,8 @@ class MenuBar extends React.Component {
                             ) : []
                         )}
                         {this.props.canRemix ? remixButton : []}
-                    </div>}
-                    {false && <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
+                    </div>
+                    <div className={classNames(styles.menuBarItem, styles.communityButtonWrapper)}>
                         {this.props.enableCommunity ? (
                             (this.props.isShowingProject || this.props.isUpdating) && (
                                 <ProjectWatcher onDoneUpdating={this.props.onSeeCommunity}>
@@ -707,11 +708,11 @@ class MenuBar extends React.Component {
                                 <CommunityButton className={styles.menuBarButton} />
                             </MenuBarItemTooltip>
                         ) : [])}
-                    </div>}
+                    </div>
                 </div>
 
                 <div className={styles.accountInfoGroup} >
-                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
+                    {/* <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         <img
                             className={styles.userSectionIcon}
                             src={questionsIcon}
@@ -721,7 +722,7 @@ class MenuBar extends React.Component {
                             description="Title bar link for questions"
                             id="gui.menuBar.questionsLink"
                         />
-                    </div>
+                    </div> */}
                     <div className={styles.menuBarItem}>
                         <img
                             className={styles.userSectionIcon}
@@ -731,13 +732,6 @@ class MenuBar extends React.Component {
                             defaultMessage="200"
                             description="Title bar that display user cybercoins quantity"
                             id="gui.menuBar.cybercoins"
-                        />
-                    </div>
-                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
-                        <FormattedMessage
-                            defaultMessage="Username"
-                            description="Title bar for user name"
-                            id="gui.menuBar.username"
                         />
                     </div>
                 </div>
@@ -882,14 +876,14 @@ class MenuBar extends React.Component {
 MenuBar.propTypes = {
     aboutMenuOpen: PropTypes.bool,
     accountMenuOpen: PropTypes.bool,
-    // authorId: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-    // authorThumbnailUrl: PropTypes.string,
-    // authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+    authorId: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+    authorThumbnailUrl: PropTypes.string,
+    authorUsername: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
     autoUpdateProject: PropTypes.func,
     canChangeLanguage: PropTypes.bool,
     canCreateCopy: PropTypes.bool,
     canCreateNew: PropTypes.bool,
-    // canEditTitle: PropTypes.bool,
+    canEditTitle: PropTypes.bool,
     canManageFiles: PropTypes.bool,
     canRemix: PropTypes.bool,
     canSave: PropTypes.bool,
@@ -911,9 +905,9 @@ MenuBar.propTypes = {
     logo: PropTypes.string,
     modeMenuOpen: PropTypes.bool,
     modeNow: PropTypes.bool,
-    // mode220022BC: PropTypes.bool,
-    // mode1920: PropTypes.bool,
-    // mode1990: PropTypes.bool,
+    mode220022BC: PropTypes.bool,
+    mode1920: PropTypes.bool,
+    mode1990: PropTypes.bool,
     mode2020: PropTypes.bool,
 
     onClickAbout: PropTypes.oneOfType([
@@ -939,26 +933,26 @@ MenuBar.propTypes = {
     onClickSaveAsCopy: PropTypes.func,
     onLogOut: PropTypes.func,
     onOpenRegistration: PropTypes.func,
-    // onOpenTipLibrary: PropTypes.func,
+    onOpenTipLibrary: PropTypes.func,
     onProjectTelemetryEvent: PropTypes.func,
     onRequestOpenAbout: PropTypes.func,
     onRequestCloseAbout: PropTypes.func,
     onRequestCloseAccount: PropTypes.func,
     onRequestCloseEdit: PropTypes.func,
     onRequestCloseFile: PropTypes.func,
-    // onRequestCloseLanguage: PropTypes.func,
+    onRequestCloseLanguage: PropTypes.func,
     onRequestCloseLogin: PropTypes.func,
     onRequestCloseMode: PropTypes.func,
     onSeeCommunity: PropTypes.func,
     onShare: PropTypes.func,
     onStartSelectingFileUpload: PropTypes.func,
-    // onToggleLoginOpen: PropTypes.func,
+    onToggleLoginOpen: PropTypes.func,
     projectTitle: PropTypes.string,
     renderLogin: PropTypes.func,
     sessionExists: PropTypes.bool,
     shouldSaveBeforeTransition: PropTypes.func,
     showComingSoon: PropTypes.bool,
-    // userOwnsProject: PropTypes.bool,
+    userOwnsProject: PropTypes.bool,
     username: PropTypes.string,
     vm: PropTypes.instanceOf(VM).isRequired
 };
