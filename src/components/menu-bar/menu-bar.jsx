@@ -711,8 +711,8 @@ class MenuBar extends React.Component {
                     </div>
                 </div>
 
-                <div className={styles.accountInfoGroup} >
-                    {/* <div className={classNames(styles.menuBarItem, styles.hoverable)}>
+                {/* <div className={styles.accountInfoGroup} >
+                    <div className={classNames(styles.menuBarItem, styles.hoverable)}>
                         <img
                             className={styles.userSectionIcon}
                             src={questionsIcon}
@@ -722,7 +722,7 @@ class MenuBar extends React.Component {
                             description="Title bar link for questions"
                             id="gui.menuBar.questionsLink"
                         />
-                    </div> */}
+                    </div>
                     <div className={styles.menuBarItem}>
                         <img
                             className={styles.userSectionIcon}
@@ -734,7 +734,7 @@ class MenuBar extends React.Component {
                             id="gui.menuBar.cybercoins"
                         />
                     </div>
-                </div>
+                </div> */}
 
                 {/* show the proper UI in the account menu, given whether the user is
                 logged in, and whether a session is available to log in with */}
@@ -748,6 +748,17 @@ class MenuBar extends React.Component {
                         this.props.username ? (
                             // ************ user is logged in ************
                             <React.Fragment>
+                                <div className={styles.menuBarItem}>
+                                    <img
+                                        className={styles.userSectionIcon}
+                                        src={cybercoinIcon}
+                                    />
+                                    <FormattedMessage
+                                        defaultMessage="200"
+                                        description="Title bar that display user cybercoins quantity"
+                                        id="gui.menuBar.cybercoins"
+                                    />
+                                </div>
                                 <a href="/mystuff/">
                                     <div
                                         className={classNames(
