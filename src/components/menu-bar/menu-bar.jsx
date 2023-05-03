@@ -84,7 +84,7 @@ import dropdownCaret from './dropdown-caret.svg';
 import languageIcon from '../language-selector/language-icon.svg';
 import aboutIcon from './icon--about.svg';
 // import questionsIcon from './questions-icon.svg';
-import cybercoinIcon from './cybercoin-icon.svg';
+// import cybercoinIcon from './cybercoin-icon.svg';
 
 import cybergeniosLogo from './cybergenios-logo.svg';
 import ninetiesLogo from './nineties_logo.svg';
@@ -748,7 +748,7 @@ class MenuBar extends React.Component {
                         this.props.username ? (
                             // ************ user is logged in ************
                             <React.Fragment>
-                                <div className={styles.menuBarItem}>
+                                {/* <div className={styles.menuBarItem}>
                                     <img
                                         className={styles.userSectionIcon}
                                         src={cybercoinIcon}
@@ -758,7 +758,7 @@ class MenuBar extends React.Component {
                                         description="Title bar that display user cybercoins quantity"
                                         id="gui.menuBar.cybercoins"
                                     />
-                                </div>
+                                </div> */}
                                 {/* <a href="/mystuff/">
                                     <div
                                         className={classNames(
