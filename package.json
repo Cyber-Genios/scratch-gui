@@ -1,5 +1,5 @@
 {
-  "name": "scratch-gui",
+  "name": "@cybergenios/scratch-gui",
   "version": "1.8.20",
   "description": "Graphical User Interface for creating and running Scratch 3.0 projects",
   "author": "Massachusetts Institute of Technology",
@@ -33,6 +33,8 @@
     }
   },
   "dependencies": {
+    "@cybergenios/scratch-blocks": "^0.1.0",
+    "@cybergenios/scratch-paint": "^1.1.49",
     "arraybuffer-loader": "^1.0.6",
     "autoprefixer": "^9.0.1",
     "base64-loader": "1.0.0",

@@ -37,6 +37,7 @@ const base = {
             include: [
                 path.resolve(__dirname, 'src'),
                 /node_modules[\\/]scratch-[^\\/]+[\\/]src/,
+                /node_modules[\\/]@cybergenios[\\/]scratch-[^\\/]+[\\/]src/,
                 /node_modules[\\/]pify/,
                 /node_modules[\\/]@vernier[\\/]godirect/
             ],
@@ -169,7 +170,7 @@ module.exports = [
             new CopyWebpackPlugin({
                 patterns: [
                     {
-                        from: 'node_modules/scratch-blocks/media',
+                        from: 'node_modules/@cybergenios/scratch-blocks/media',
                         to: 'static/blocks-media'
                     }
                 ]
@@ -227,7 +228,7 @@ module.exports = [
                 new CopyWebpackPlugin({
                     patterns: [
                         {
-                            from: 'node_modules/scratch-blocks/media',
+                            from: 'node_modules/@cybergenios/scratch-blocks/media',
                             to: 'static/blocks-media'
                         }
                     ]
