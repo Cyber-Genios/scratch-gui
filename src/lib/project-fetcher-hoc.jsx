@@ -143,7 +143,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
     ProjectFetcherComponent.defaultProps = {
         assetHost: 'https://assets.scratch.mit.edu',
         projectHost: 'https://apiv2.cybergenios.com.br/scratch',
-        customerUrl: 'https://cybergenios-customer-qa.netlify.ap'
+        customerUrl: 'https://cybergenios-customer-qa.netlify.app'
     };
 
     const mapStateToProps = state => ({
