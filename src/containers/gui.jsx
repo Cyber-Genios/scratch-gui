@@ -74,6 +74,7 @@ class GUI extends React.Component {
             onUpdateProjectId,
             onVmInit,
             projectHost,
+            customerUrl,
             projectId,
             /* eslint-enable no-unused-vars */
             children,
@@ -112,6 +113,7 @@ GUI.propTypes = {
     onUpdateProjectId: PropTypes.func,
     onVmInit: PropTypes.func,
     projectHost: PropTypes.string,
+    customerUrl: PropTypes.string,
     projectId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     telemetryModalVisible: PropTypes.bool,
     vm: PropTypes.instanceOf(VM).isRequired

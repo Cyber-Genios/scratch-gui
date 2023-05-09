@@ -38,6 +38,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
             storage.setProjectHost(props.projectHost);
             storage.setProjectToken(props.projectToken);
             storage.setAssetHost(props.assetHost);
+            storage.setCustomerUrl(props.customerUrl);
             storage.setTranslatorFunction(props.intl.formatMessage);
             // props.projectId might be unset, in which case we use our default;
             // or it may be set by an even higher HOC, and passed to us.
@@ -60,6 +61,9 @@ const ProjectFetcherHOC = function (WrappedComponent) {
             }
             if (prevProps.assetHost !== this.props.assetHost) {
                 storage.setAssetHost(this.props.assetHost);
+            }
+            if (prevProps.customerUrl !== this.props.customerUrl) {
+                storage.setCustomerUrl(this.props.customerUrl);
             }
             if (this.props.isFetchingWithId && !prevProps.isFetchingWithId) {
                 this.fetchProject(this.props.reduxProjectId, this.props.loadingState);
@@ -101,6 +105,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
                 onProjectUnchanged,
                 projectHost,
                 projectId,
+                customerUrl,
                 reduxProjectId,
                 setProjectId: setProjectIdProp,
                 /* eslint-enable no-unused-vars */
@@ -129,6 +134,7 @@ const ProjectFetcherHOC = function (WrappedComponent) {
         onFetchedProjectData: PropTypes.func,
         onProjectUnchanged: PropTypes.func,
         projectHost: PropTypes.string,
+        customerUrl: PropTypes.string,
         projectToken: PropTypes.string,
         projectId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
         reduxProjectId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),

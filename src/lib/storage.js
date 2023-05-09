@@ -58,6 +58,12 @@ class Storage extends ScratchStorage {
     setAssetHost (assetHost) {
         this.assetHost = assetHost;
     }
+    getCustomerUrl () {
+        return this.customerUrl;
+    }
+    setCustomerUrl (customerUrl) {
+        this.customerUrl = customerUrl;
+    }
     getAssetGetConfig (asset) {
         return `${this.assetHost}/${asset.assetId}.${asset.dataFormat}`;
     }

@@ -93,6 +93,7 @@ import prehistoricLogo from './prehistoric-logo.svg';
 import oldtimeyLogo from './oldtimey-logo.svg';
 
 import sharedMessages from '../../lib/shared-messages';
+import storage from '../../lib/storage.js';
 
 const ariaMessages = defineMessages({
     language: {
@@ -759,8 +760,7 @@ class MenuBar extends React.Component {
                                         id="gui.menuBar.cybercoins"
                                     />
                                 </div> */}
-                                {/* TODO get domain from env */}
-                                <a href={`https://cybergenios-customer-qa.netlify.app/mystuff/?accessToken=${localStorage.getItem('accessToken')}&refreshToken=${localStorage.getItem('refreshToken')}`}>
+                                <a href={`${storage.customerUrl}/mystuff/?accessToken=${localStorage.getItem('accessToken')}&refreshToken=${localStorage.getItem('refreshToken')}`}>
                                     <div
                                         className={classNames(
                                             styles.menuBarItem,

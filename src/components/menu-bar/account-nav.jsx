@@ -16,6 +16,7 @@ import UserAvatar from './user-avatar.jsx';
 import dropdownCaret from './dropdown-caret.svg';
 
 import styles from './account-nav.css';
+import storage from '../../lib/storage.js';
 
 const AccountNavComponent = ({
     className,
@@ -71,7 +72,7 @@ const AccountNavComponent = ({
                     id="gui.accountMenu.profile"
                 />
             </MenuItemContainer>
-            <MenuItemContainer href={`https://cybergenios-customer-qa.netlify.app/mystuff/?accessToken=${localStorage.getItem('accessToken')}&refreshToken=${localStorage.getItem('refreshToken')}`}>
+            <MenuItemContainer href={`${storage.customerUrl}/mystuff/?accessToken=${localStorage.getItem('accessToken')}&refreshToken=${localStorage.getItem('refreshToken')}`}>
                 <FormattedMessage
                     defaultMessage="My Stuff"
                     description="Text to link to list of my projects, in the account navigation menu"
